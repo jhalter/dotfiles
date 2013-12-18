@@ -33,3 +33,4 @@ function s2c {
 }
 
 source ~/.dotfiles/gitprompt.sh
+source /opt/boxen/env.sh
