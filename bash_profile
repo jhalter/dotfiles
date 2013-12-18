@@ -32,4 +32,4 @@ function s2c {
   sed 's/ /,/g' $@
 }
 
-source ~/.bash/gitprompt.sh
+source ~/.dotfiles/gitprompt.sh
