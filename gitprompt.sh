@@ -24,7 +24,7 @@ Magenta="\[\033[1;95m\]"     # Purple
 
 # Various variables you might want for your PS1 prompt instead
 Time12a="\@"
-PathShort="\w"
+PathShort="[\u@\h \W]"
 
 # Default values for the appearance of the prompt. Configure at will.
 GIT_PROMPT_PREFIX="("
@@ -39,7 +39,7 @@ GIT_PROMPT_UNTRACKED="…"
 GIT_PROMPT_CLEAN="${BGreen}✔"
 
 PROMPT_START="$PathShort$ResetColor"
-PROMPT_END="$ResetColor $ "
+PROMPT_END="$ResetColor$ "
 
 
 function update_current_git_vars() {
@@ -101,7 +101,7 @@ function set_virtualenv () {
   if test -z "$VIRTUAL_ENV" ; then
       PYTHON_VIRTUALENV=""
   else
-      PYTHON_VIRTUALENV="${Blue}(`basename \"$VIRTUAL_ENV\"`)${ResetColor} "
+      PYTHON_VIRTUALENV="${Blue}(`basename \"$VIRTUAL_ENV\"`)${ResetColor}"
   fi
 }
 
