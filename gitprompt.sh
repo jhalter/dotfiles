@@ -10,8 +10,8 @@ ResetColor="\[\033[0m\]"       # Text Reset
 # Regular Colors
 Red="\[\033[0;31m\]"          # Red
 Yellow="\[\033[0;33m\]"       # Yellow
-Blue="\[\033[0;34m\]"         # Blue
-WHITE='\[\033[37m\]'
+Blue="\[\033[0;36m\]"         # Lies, it's actually cyan (easier to see)
+White="\[\033[37m\]"
 
 # Bold
 BGreen="\[\033[1;32m\]"       # Green
@@ -24,7 +24,7 @@ Magenta="\[\033[1;95m\]"     # Purple
 
 # Various variables you might want for your PS1 prompt instead
 Time12a="\@"
-PathShort="\w"
+PathShort="[\u@\h \W]"
 
 # Default values for the appearance of the prompt. Configure at will.
 GIT_PROMPT_PREFIX="("
@@ -39,7 +39,7 @@ GIT_PROMPT_UNTRACKED="…"
 GIT_PROMPT_CLEAN="${BGreen}✔"
 
 PROMPT_START="$PathShort$ResetColor"
-PROMPT_END="$ResetColor $ "
+PROMPT_END="$ResetColor$ "
 
 
 function update_current_git_vars() {
@@ -92,7 +92,7 @@ function setGitPrompt() {
 
 	  PS1="$PYTHON_VIRTUALENV$PROMPT_START$STATUS$PROMPT_END"
 	else
-	  PS1="$PROMPT_START$PROMPT_END"
+	  PS1="$PYTHON_VIRTUALENV$PROMPT_START$PROMPT_END"
 	fi
 }
 
@@ -101,7 +101,7 @@ function set_virtualenv () {
   if test -z "$VIRTUAL_ENV" ; then
       PYTHON_VIRTUALENV=""
   else
-      PYTHON_VIRTUALENV="${BLUE}(`basename \"$VIRTUAL_ENV\"`)${ResetColor} "
+      PYTHON_VIRTUALENV="${Blue}(`basename \"$VIRTUAL_ENV\"`)${ResetColor}"
   fi
 }
 
