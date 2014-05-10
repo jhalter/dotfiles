@@ -11,9 +11,6 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 export GIT_MERGE_AUTOEDIT=no
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
 # don't put duplicate lines or lines starting with space in the history.
 export HISTCONTROL=ignoreboth
 
