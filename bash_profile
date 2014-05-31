@@ -29,5 +29,9 @@ function s2c {
   sed 's/ /,/g' $@
 }
 
+function md2mw {
+  pandoc -s -S -w mediawiki --toc $1 -o $1.wiki
+}
+
 source ~/.dotfiles/gitprompt.sh
 source /opt/boxen/env.sh
