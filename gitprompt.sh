@@ -10,7 +10,7 @@ ResetColor="\[\033[0m\]"       # Text Reset
 # Regular Colors
 Red="\[\033[0;31m\]"          # Red
 Yellow="\[\033[0;33m\]"       # Yellow
-Blue="\[\033[0;36m\]"         # Lies, it's actually cyan (easier to see)
+Blue="\[\033[0;34m\]"         # Blue
 White="\[\033[37m\]"
 
 # Bold
@@ -24,7 +24,7 @@ Magenta="\[\033[1;95m\]"     # Purple
 
 # Various variables you might want for your PS1 prompt instead
 Time12a="\@"
-PathShort="[\u@\h \W]"
+PathShort="\w"
 
 # Default values for the appearance of the prompt. Configure at will.
 GIT_PROMPT_PREFIX="("
