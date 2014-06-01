@@ -20,3 +20,5 @@
  untracked = cyan
 [push]
 	default = simple
+[alias]
+	workprofile = config user.email \"jhalter@groupon.com\"
