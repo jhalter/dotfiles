@@ -22,3 +22,5 @@
 	default = simple
 [alias]
 	workprofile = config user.email \"jhalter@groupon.com\"
+[core]
+	warnambiguousrefs = false
