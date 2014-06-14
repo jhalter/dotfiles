@@ -1,6 +1,6 @@
 [user]
  name = Jeff Halter
- email = jeff.d.halter@gmail.com
+ email = jhalter@groupon.com
 [color]
  branch = auto
  diff = auto
@@ -13,7 +13,7 @@
  meta = yellow bold
  frag = magenta bold
  old = red
- new = cyan
+ new = green
 [color "status"]
  added = yellow
  changed = green
@@ -24,3 +24,10 @@
 	workprofile = config user.email \"jhalter@groupon.com\"
 [core]
 	warnambiguousrefs = false
+ excludesfile = /opt/boxen/config/git/gitignore
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
