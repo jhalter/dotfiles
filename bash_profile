@@ -23,6 +23,8 @@ alias pp='git pull && git push'
 alias pl='bin/git-push-loop'
 alias gitclean='git reset --hard origin/master'
 alias gendate="(TZ=UTC date '+%Y.%m.%d_%H.%M')"
+alias c='clear'
+alias gr='git checkout -- . ; git clean -f'
 
 # convert space delimited list into comma delimited list
 function s2c {
@@ -35,3 +37,4 @@ function md2mw {
 
 source ~/.dotfiles/gitprompt.sh
 source /opt/boxen/env.sh
+source ~/Dropbox/homedir/jhalter/.bash_profile
