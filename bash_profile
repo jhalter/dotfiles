@@ -1,6 +1,6 @@
 ## General
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
-export EDITOR=mate
+export EDITOR=vim
 export CLICOLOR=1
 
 ## EC2
@@ -20,11 +20,12 @@ shopt -s histappend
 [[ $(which /usr/bin/gnutar) ]] && alias tar='/usr/local/bin/gtar'
 alias ll='ls -alF'
 alias pp='git pull && git push'
-alias pl='bin/git-push-loop'
-alias gitclean='git reset --hard origin/master'
+alias pl='bin/git-push-loop.sh'
+alias gr='git reset && git checkout -- . && git clean -f'
 alias gendate="(TZ=UTC date '+%Y.%m.%d_%H.%M')"
 alias c='clear'
 alias gr='git checkout -- . ; git clean -f'
+alias vi='vim'
 
 # convert space delimited list into comma delimited list
 function s2c {
@@ -35,6 +36,11 @@ function md2mw {
   pandoc -s -S -w mediawiki --toc $1 -o $1.wiki
 }
 
+function nagios_disable {
+  cd ~/repos/ops-config
+  bin/nagios_downtime -a -u jhalter -t 999999 -c "Disabling alarms" $@
+  cd -
+}
+
 source ~/.dotfiles/gitprompt.sh
 source /opt/boxen/env.sh
-source ~/Dropbox/homedir/jhalter/.bash_profile

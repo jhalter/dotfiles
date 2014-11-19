@@ -22,6 +22,7 @@
 	default = simple
 [alias]
 	workprofile = config user.email \"jhalter@groupon.com\"
+	lg = log --oneline --decorate --all --graph
 [core]
 	warnambiguousrefs = false
  excludesfile = /opt/boxen/config/git/gitignore
@@ -33,4 +34,3 @@ protocol = https
 [credential]
 helper = /opt/boxen/bin/boxen-git-credential
 [pull]
-	rebase = true
