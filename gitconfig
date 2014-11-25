@@ -19,14 +19,14 @@
  changed = green
  untracked = cyan
 [push]
-	default = simple
+ default = simple
 [alias]
-	workprofile = config user.email \"jhalter@groupon.com\"
-	lg = log --oneline --decorate --all --graph
+ workprofile = config user.email \"jhalter@groupon.com\"
+ lg = log --oneline --decorate --all --graph
 [core]
-	warnambiguousrefs = false
+ warnambiguousrefs = false
  excludesfile = /opt/boxen/config/git/gitignore
-	autocrlf = input
+ autocrlf = input
 
 [hub]
 protocol = https
