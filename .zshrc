@@ -79,6 +79,14 @@ export PATH="bin:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/rbenv/pl
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi=/opt/boxen/homebrew/bin/vim
+alias pl="bin/git-push-loop.sh"
 alias pp="git pull --rebase && git push"
+alias gr="git reset; git checkout -- . ; git clean -f "
+alias be="bundle exec"
+alias bes="bundle exec rails s"
+alias bec="bundle exec rails c"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/jhalter/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
