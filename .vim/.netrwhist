@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/jhalter/repos/chess-on-rails/test'
-let g:netrw_dirhist_2='/Users/jhalter/repos/ops_requests_rails/spec/helpers'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jhalter/repos/chess-on-rails/app/views/player_mailer'
+let g:netrw_dirhist_2='/Users/jhalter/repos/drinking-bird/app/controllers'
+let g:netrw_dirhist_3='/Users/jhalter/repos/vm-tools/bin'
+let g:netrw_dirhist_4='/Users/jhalter/repos/drinking-bird/app/controllers'
+let g:netrw_dirhist_5='/Users/jhalter/repos/ops-config/hostclasses'
+let g:netrw_dirhist_6='/Users/jhalter/repos/drinking-bird/app/controllers'
+let g:netrw_dirhist_7='/opt/rubies/1.9.3-p484/lib/ruby/gems/1.9.1/gems/ops_config_wizard-2.0.7'
+let g:netrw_dirhist_8='/Users/jhalter/repos/coreos-vagrant'

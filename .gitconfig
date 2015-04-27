@@ -34,3 +34,5 @@ protocol = https
 [credential]
 helper = /opt/boxen/bin/boxen-git-credential
 [pull]
+[init]
+	templatedir = ~/.git_template

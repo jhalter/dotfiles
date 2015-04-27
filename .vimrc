@@ -23,6 +23,7 @@ set ruler                         " show row and column in footer
 set showmatch                     " show bracket matches
 set clipboard=unnamed
 set hidden
+set noswapfile
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -37,8 +38,8 @@ if exists('+colorcolumn')
   set colorcolumn=80
 endif
 
-nnoremap    <leader>R       :RubocopThis<CR>
 nnoremap    <leader><leader> <c-^>
+nnoremap    <leader>R       :RubocopThis<CR>
 nnoremap    <leader>P       :set paste<CR>
 nnoremap    <leader>N       :set nopaste<CR>
 
@@ -71,7 +72,7 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 let g:vim_markdown_folding_disabled=1
-" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
