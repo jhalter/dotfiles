@@ -40,6 +40,7 @@ endif
 
 nnoremap    <leader><leader> <c-^>
 nnoremap    <leader>R       :RubocopThis<CR>
+nnoremap    <C-n> :NERDTreeToggle<CR>
 nnoremap    <leader>P       :set paste<CR>
 nnoremap    <leader>N       :set nopaste<CR>
 
@@ -120,3 +121,5 @@ endif
 
 au BufNewFile,BufRead *.zsh-theme set filetype=zsh
 
+" Close vim if only open window is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
